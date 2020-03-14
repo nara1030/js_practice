@@ -26,6 +26,30 @@ JS 연습
 	* 스크립트를 작성할 때, 문서 자체를 조작하거나 문서의 children을 얻기 위해 `document` 또는 `window` elements를 위한 API 즉시 사용 가능
 * 중요한 데이터 타입들
 * DOM interfaces
+	1. Interface와 Object
+		* 많은 objects(DOM specification)가 여러 개의 다른 interfaces와 연관되어 있음  
+			```txt
+			1. HTML FORM element
+				- HTMLFormElement: name property
+				- HTMLElement: className property
+			2. table object
+				- HTMLTableElement: createCaption, insertRow 등
+				- HTMLElement
+				- Node
+			```
+		* table object를 참조하면, 3가지 interfaces 사용 가능  
+			```html
+			var table = document.getElementById("table");
+			var tableAttrs = table.attributes; // Node/Element interface
+			for (var i = 0; i < tableAttrs.length; i++) {
+				// HTMLTableElement interface: border attribute
+				if(tableAttrs[i].nodeName.toLowerCase() == "border")
+					table.border = "1"; 
+			}
+			// HTMLTableElement interface: summary attribute
+			table.summary = "note: increased border";
+			```
+	2. DOM의 핵심 Interface
 * DOM API 테스팅
 
 - - -
@@ -52,7 +76,7 @@ JS 연습
 	2. [DOM](https://poiemaweb.com/js-dom)
 * [브라우저는 어떻게 동작하는가?](https://d2.naver.com/helloworld/59361)
 * [모던 자바스크립트 튜토리얼](https://ko.javascript.info/)
-* 
+* [Where should I put <script> tags in HTML markup?](https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup)
 * .
 
 ##### [목차로 이동](#목차)
