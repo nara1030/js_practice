@@ -23,26 +23,10 @@ JS 연습
 * DOM에 어떻게 접근할 수 있는가?
 	* DOM을 사용하기 위해 특별히 해야 할 일은 없음
 		* 모든 웹 브라우저는 자신만의 방법으로 DOM을 구현(∴ 스크립트가 접근할 수 있는 웹 페이지 만들기 가능)
-	* 스크립트를 작성할 때, 문서 자체를 조작하거나 문서의 children을 얻기 위해 `document` 또는 window` elements를 위한 API 즉시 사용 가능  
-		```html
-		<html>
-			<head>
-				<script>
-					// 모든 DOM을 사용할 수 있게 되는 때
-					window.onload = function() {
-
-					// create a couple of elements in an otherwise empty HTML page
-					var heading = document.createElement("h1");
-					var heading_text = document.createTextNode("Big Head!");
-					heading.appendChild(heading_text);
-					document.body.appendChild(heading);
-					}
-				</script>
-			</head>
-			<body onload="window.alert('welcome to my home page!');">
-			</body>
-		</html>
-		```
+	* 스크립트를 작성할 때, 문서 자체를 조작하거나 문서의 children을 얻기 위해 `document` 또는 `window` elements를 위한 API 즉시 사용 가능
+* 중요한 데이터 타입들
+* DOM interfaces
+* DOM API 테스팅
 
 - - -
 1. DOM(Document Object Model)
