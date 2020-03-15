@@ -77,6 +77,7 @@ JS 연습
 * [브라우저는 어떻게 동작하는가?](https://d2.naver.com/helloworld/59361)
 * [모던 자바스크립트 튜토리얼](https://ko.javascript.info/)
 * [Where should I put <script> tags in HTML markup?](https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup)
+* [제이쿼리](http://tcpschool.com/jquery/intro)
 * .
 
 ##### [목차로 이동](#목차)
