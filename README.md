@@ -231,7 +231,7 @@ id 속성과는 다르게 class 속성은 웹 페이지 내에서 중복될 수 
 
 추가로 후손 선택자 관련 주의사항은 아래와 같다. 만약 #header 태그의 후손에 위치하는 h1 태그와 #header 태그의 후손에 위치하는 h2 태그를 선택하고 싶다면 아래와 같이 사용해야 한다.
 
-```
+```html
 <style>
 	#header h1, #header h2 { color: red; }
 </style>
@@ -276,7 +276,12 @@ id 속성과는 다르게 class 속성은 웹 페이지 내에서 중복될 수 
 ##### [목차로 이동](#목차)
 
 ### CSS3 스타일 속성
+* [display 속섵](https://ofcourse.kr/css-course/display-%EC%86%8D%EC%84%B1)
+* [float 속성](https://ofcourse.kr/css-course/float-%EC%86%8D%EC%84%B1)
+* [position 속성](https://ofcourse.kr/css-course/position-%EC%86%8D%EC%84%B1)
 
+- - -
+* [normalize.css](https://webdir.tistory.com/455)
 
 ##### [목차로 이동](#목차)
 
