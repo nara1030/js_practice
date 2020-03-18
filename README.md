@@ -117,9 +117,9 @@ CSS3은 대략 아래와 같은 선택자가 있다.
 | 태그 선택자 | 태그 | h1 |
 | 아이디 선택자 | #아이디 | #header |
 | 클래스 선택자 | .클래스 | .item |
+| 속성 선택자 | | |
 | 후손 선택자 | 선택자 선택자 | header h1 |
 | 자손 선택자 | 선택자 > 선택자 | header > h1 |
-| 속성 선택자 | | |
 | 반응 선택자 | 선택자:hover | div:hover |
 | | 선택자:active | div:active |
 
@@ -127,6 +127,151 @@ CSS3은 대략 아래와 같은 선택자가 있다.
 
 * [CSS: 선택자(Selector) 이해](http://www.nextree.co.kr/p8468/)
 * [선택자의 종류](https://opentutorials.org/module/484/4150)
+
+##### [목차로 이동](#목차)
+
+#### 전체 선택자
+일반적으로 전체 선택자가 body 태그 내부에 있는 모든 요소를 선택한다고 생각하기 쉽다. 하지만 전체 선택자는 html 태그를 포함해 head 태그, title 태그, style 태그까지 선택한다.
+
+##### [목차로 이동](#목차)
+
+#### 태그 선택자
+태그 선택자는 HTML 페이지 내부에서 특정 종류의 태그를 모두 선택할 때 사용하는 선택자이다. 이때 여러 개의 선택자를 한꺼번에 선택해서 스타일 속성을 적용할 때는 쉼표를 사용한다.
+
+```html
+<style>
+	body, p, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+</style>
+```
+
+##### [목차로 이동](#목차)
+
+#### 아이디 선택자
+아이디 선택자는 특정한 id 속성을 가지고 있는 태그를 선택할 때 사용하는 선택자이다. 한편 일반적으로 `id 속성은 웹 페이지 내부에서 중복되면 안 된다`라는 말을 듣곤 한다. 하지만 스타일시트에서는 id 속성 중복이 문제가 되지 않는다. 하지만 자바스크립트는 id 속성이 중복이 될 경우 문제가 발생하기 때문에 id 속성은 웹 페이지 내부에서 중복되지 않도록 해야 한다.
+
+##### [목차로 이동](#목차)
+
+#### 클래스 선택자
+클래스 선택자는 특정한 클래스를 가지고 있는 태그를 선택할 때 사용하는 선택자이다. class 속성은 아래 코드(h1 태그)처럼 공백으로 구분해서 여러 클래스를 사용할 수 있다.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Selector Basic</title>
+	<style>
+		.item { color: red; }
+		.header { background-color: blue; }
+	</style>
+</head>
+<body>
+	<h1 class="item header">Lorem ipsum</h1>
+</body>
+</html>
+```
+
+id 속성과는 다르게 class 속성은 웹 페이지 내에서 중복될 수 있다. 따라서 태그 선택자와 클래스 선택자를 함께 사용해 더 정확하게 태그를 선택할 수 있다.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Selector Basic</title>
+	<style>
+		li.select { color: red; }
+	</style>
+</head>
+<body>
+	<h1 class="select">Lorem ipsum</h1>
+	<ul>
+		<li class="select">Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+	</ul>
+</body>
+</html>
+```
+
+##### [목차로 이동](#목차)
+
+#### 후손 선택자
+먼저 앞서 자손과 후손은 아래 그림을 보고 이해할 수 있다.
+
+<img src="./img/css_001.png" width="350" height="250"></br>
+
+| 선택자 형태 | 설명 |
+| -- | -- |
+| 선택자A 선택자B | 선택자A의 후손에 위치하는 선택자B 선택 |
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Selector Basic</title>
+	<style>
+		#header h1 { color: red; }
+		#section h1 { color: orange; }
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1 class="title">Lorem ipsum</h1>
+		<div id="nav">
+			<h1>Navigation</h1>
+		</div>
+	</div>
+	<div id="section">
+		<h1 class="title">Lorem ipsum</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
+</body>
+</html>
+```
+
+추가로 후손 선택자 관련 주의사항은 아래와 같다. 만약 #header 태그의 후손에 위치하는 h1 태그와 #header 태그의 후손에 위치하는 h2 태그를 선택하고 싶다면 아래와 같이 사용해야 한다.
+
+```
+<style>
+	#header h1, #header h2 { color: red; }
+</style>
+```
+
+##### [목차로 이동](#목차)
+
+#### 자손 선택자
+| 선택자 형태 | 설명 |
+| -- | -- |
+| 선택자A > 선택자B | 선택자A의 자손에 위치하는 선택자B 선택 |
+
+후손 선택자 예의 결과에서 #nav 태그 아래에 있는 h1 태그에는 스타일 적용을 하고 싶지 않을 때 아래와 같이 작성한다.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Selector Basic</title>
+	<style>
+		#header > h1 { color: red; }
+		#section > h1 { color: orange; }
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1 class="title">Lorem ipsum</h1>
+		<div id="nav">
+			<h1>Navigation</h1>
+		</div>
+	</div>
+	<div id="section">
+		<h1 class="title">Lorem ipsum</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
+</body>
+</html>
+```
+
+추가로 table 태그의 요소를 선택할 때는 자손 선택자를 사용하는 것이 좋지 않다. 웹 브라우저가 자동으로 [태그를 추가](https://otep.tistory.com/94)하기 때문이다.
 
 ##### [목차로 이동](#목차)
 
