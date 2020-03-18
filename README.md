@@ -296,11 +296,14 @@ id 속성과는 다르게 class 속성은 웹 페이지 내에서 중복될 수 
 * [모던 자바스크립트 튜토리얼](https://ko.javascript.info/)
 * [Where should I put <script> tags in HTML markup?](https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup)
 * [제이쿼리](http://tcpschool.com/jquery/intro)
-* [JavaScript로 함수형 프로그래밍 배우기 - Anjana Vakil](https://www.youtube.com/watch?v=e-5obm1G_FY&feature=youtu.be)
-	* [An introduction to functional programming](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
-	* [Rambda](https://ramdajs.com/)
-	* [Immutable collections for JavaScript](https://immutable-js.github.io/immutable-js/)
-	* [mori](http://swannodette.github.io/mori/)
+* JSConf EU
+	* [JavaScript로 함수형 프로그래밍 배우기 - Anjana Vakil](https://www.youtube.com/watch?v=e-5obm1G_FY&feature=youtu.be)
+		* [An introduction to functional programming](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
+		* [Rambda](https://ramdajs.com/)
+		* [Immutable collections for JavaScript](https://immutable-js.github.io/immutable-js/)
+		* [mori](http://swannodette.github.io/mori/)
+	* [Immutable data structures for functional JS - Anjana Vakil](https://www.youtube.com/watch?v=Wo0qiGPSV-s)
+	* [이벤트 루프는 무엇입니까? - Philip Roberts](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 * .
 
 ##### [목차로 이동](#목차)
