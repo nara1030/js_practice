@@ -306,6 +306,9 @@ id 속성과는 다르게 class 속성은 웹 페이지 내에서 중복될 수 
 	* [이벤트 루프는 무엇입니까? - Philip Roberts](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 * 코드스피츠
 	* [CSS Rendering - 76s](./codespitz/76/README.md)
+	* [자바스크립트 기초 - 69s](https://www.youtube.com/watch?v=AjVj7wWFD8I)
+	* [ES6+ 기초 - 73s](https://www.youtube.com/watch?v=kG87PONfqkg)
+	* [ES6+ 기초 - 77s](https://www.youtube.com/watch?v=0j_eGoF8Q98)
 * .
 
 ##### [목차로 이동](#목차)
