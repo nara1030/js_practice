@@ -292,10 +292,12 @@ id 속성과는 다르게 class 속성은 웹 페이지 내에서 중복될 수 
 * DOM
 	1. [DOM 소개](https://developer.mozilla.org/ko/docs/Web/API/Document_Object_Model/%EC%86%8C%EA%B0%9C)
 	2. [DOM](https://poiemaweb.com/js-dom)
-* [브라우저는 어떻게 동작하는가?](https://d2.naver.com/helloworld/59361)
-* [모던 자바스크립트 튜토리얼](https://ko.javascript.info/)
-* [Where should I put <script> tags in HTML markup?](https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup)
-* [제이쿼리](http://tcpschool.com/jquery/intro)
+* 동작원리
+	* [브라우저는 어떻게 동작하는가?](https://d2.naver.com/helloworld/59361)
+	* [Where should I put <script> tags in HTML markup?](https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup)
+* 튜토리얼
+	* [모던 자바스크립트 튜토리얼](https://ko.javascript.info/)
+	* [제이쿼리](http://tcpschool.com/jquery/intro)
 * JSConf EU
 	* [JavaScript로 함수형 프로그래밍 배우기 - Anjana Vakil](https://www.youtube.com/watch?v=e-5obm1G_FY&feature=youtu.be)
 		* [An introduction to functional programming](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
@@ -307,6 +309,7 @@ id 속성과는 다르게 class 속성은 웹 페이지 내에서 중복될 수 
 	* [Asynchrony: Under the Hood - Shelley Vohr](https://www.youtube.com/watch?v=SrNQS8J67zc)
 	* [JavaScript engines: How do they even? - Franziska Hinkelmann](https://www.youtube.com/watch?v=p-iiEDtpy6I)
 * [코드스피츠](https://github.com/nara1030/TIL/blob/master/docs/code_spitz.md)
-* .
+* etc
+	* [setTimeout과 custom sleep](https://multifrontgarden.tistory.com/157)
 
 ##### [목차로 이동](#목차)
